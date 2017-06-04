@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+}
+
+div {
+    display: inline-block;
+    width: 31%;
+    height: 20vw;
+    margin: 1%;
+    box-shadow: 5px 5px 5px rgb(100,100,100);
+
+}
+/* Z WYKORZYSTANIEM <img> */
+div.photo_container_img {
+    overflow: hidden;
+    position: relative;
+}
+
+div.photo_container_img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transition: all .1s ease-in;
+}
+
+div.photo_container_img:hover img {
+    width: 110%;
+    height: 110%;
+}
+
+/* Z WYKORZYSTANIEM background-image w CSS */
+div.photo_container_css {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .1s ease-in;
+}
+
+div.photo_container_css:hover {
+    background-size: 110%;
+}
+
+#photo4 {
+    background-image: url(../img/roland-sands-faster-wasp-previews-the-yamaha-xsr900-photo-gallery_11.jpeg);
+}
+
+#photo5 {
+    background-image: url(../img/roland-sands-faster-wasp-previews-the-yamaha-xsr900-photo-gallery_22.jpeg);
+}
+
+#photo6 {
+    background-image: url(../img/roland-sands-faster-wasp-previews-the-yamaha-xsr900-photo-gallery_25.jpeg)
+}
