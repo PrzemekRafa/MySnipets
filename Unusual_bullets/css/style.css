@@ -1,0 +1,10 @@
+.item {
+    list-style: none;
+    font-family: 'FontAwesome';
+}
+
+.item::before {
+    content: "\f046";
+    color: crimson;
+    margin-right: .5vw;
+}
