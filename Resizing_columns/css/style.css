@@ -33,22 +33,22 @@ body {
 }
 
 #col1 .inner {
-    background-image: url(
-    http://miriadna.com/desctopwalls/images/max/Another-ordinary-day.jpg);
+    background-image: url(../img/roland-sands-faster-wasp-previews-the-yamaha-xsr900-photo-gallery_1.jpeg);
+    background-position: -700px;
 }
 
 #col2 .inner {
-    background-image: url(
-    http://t-ec.bstatic.com/images/hotel/840x460/589/58997502.jpg);
+    background-image: url(../img/roland-sands-faster-wasp-previews-the-yamaha-xsr900-photo-gallery_25.jpeg);
+    background-position: -250px;
 }
 
 #col3 .inner {
-    background-image: url(
-    http://ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2016/08/google-streetview.jpg);
+    background-image: url(../img/roland-sands-faster-wasp-previews-the-yamaha-xsr900-photo-gallery_3.jpeg);
+    background-position: 25px;
 }
 
 #col4 .inner {
-    background-image: url(
-    http://miriadna.com/desctopwalls/images/max/View-of-the-valley.jpg);
+    background-image: url(../img/roland-sands-faster-wasp-previews-the-yamaha-xsr900-photo-gallery_22.jpeg);
+    background-position: 350px;
 }
 
