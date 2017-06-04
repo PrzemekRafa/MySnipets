@@ -1,11 +1,10 @@
+html {
+    font-size: 2vh;
+}
 body {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-}
-
-p {
-    margin: 0;
 }
 
 #scene {
@@ -19,18 +18,46 @@ p {
     height: 50%;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 
 #curtain_top {
-    background-color: lightgray;
+    background: linear-gradient(-25deg, white, lightgray, white, lightgray, white);
     animation: kurtyna_gora 2s;
     animation-timing-function: ease-out;
+    box-shadow: 0px 10px 30px black;
 }
 
 #curtain_bottom {
-    background-color: darkgray;
+    background: linear-gradient(-25deg, red, rgb(200,0,0), red, rgb(200,0,0), red);
     animation: kurtyna_dol 2s;
     animation-timing-function: ease-out;
+}
+
+#curtain_top .text, #curtain_bottom .text {
+    font-size: 18rem;
+    font-weight: 100;
+    font-size-adjust: auto;
+/*    color: rgba(175,175,175,1);*/
+    color: white;
+    margin: auto;
+    left: 0;
+    right: 0;
+    line-height: 0rem;
+    position: absolute;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+    text-shadow: .5rem .5rem black;
+}
+
+#curtain_top .text {
+    bottom: 0;
+}
+
+#curtain_bottom .text {
+    top: 0;
 }
 
 @keyframes kurtyna_gora {
