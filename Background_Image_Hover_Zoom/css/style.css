@@ -32,8 +32,7 @@ div.photo_container_img img {
 }
 
 div.photo_container_img:hover img {
-    width: 110%;
-    height: 110%;
+    transform: scale(1.1);
 }
 
 /* Z WYKORZYSTANIEM background-image w CSS */
