@@ -38,6 +38,9 @@ a {
 
 li {
     list-style: none;
+}
+
+a {
     line-height: 1.5rem;
     transition: all .15s ease-in-out;
     display: block;
@@ -50,15 +53,12 @@ li {
     box-shadow: 5px 5px 5px rgb(70,102,136);
 }
 
-li:hover {
+a:hover {
     line-height: 4rem;
     height: 4rem;
     border-radius: 1vw;
     background-color: rgb(70,102,136);
     transform: scale(1.05);
     box-shadow: 10px 10px 10px rgb(25,54,86);
-}
-
-li:hover a {
     color: rgb(138,163,191);
 }
