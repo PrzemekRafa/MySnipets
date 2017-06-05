@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     padding: 0;
     margin: 0;
     background-color: rgb(227,237,249);
@@ -17,9 +17,18 @@ body {
 }
 
 h1 {
+    font-family: 'Titillium Web', sans-serif;
     line-height: 4rem;
     display: block;
     height: 4rem;
+    font-weight: 900;
+}
+
+h1:before {
+    font-family: 'FontAwesome';
+    content: "\f07c";
+    color: rgb(25,54,86);
+    padding-right: 1vw;
 }
 
 a {
@@ -51,6 +60,7 @@ a {
     margin-bottom: 1vw;
     text-align: center;
     box-shadow: 5px 5px 5px rgb(70,102,136);
+    font-weight: 400;
 }
 
 a:hover {
@@ -61,4 +71,5 @@ a:hover {
     transform: scale(1.05);
     box-shadow: 10px 10px 10px rgb(25,54,86);
     color: rgb(138,163,191);
+    font-weight: 700;
 }
