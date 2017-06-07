@@ -64,8 +64,8 @@ a {
 }
 
 a:hover {
-    line-height: 4rem;
-    height: 4rem;
+    line-height: 3rem;
+    height: 3rem;
     border-radius: 1vw;
     background-color: rgb(70,102,136);
     transform: scale(1.05);
