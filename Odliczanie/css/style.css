@@ -1,3 +1,4 @@
+/* Reset ustawień przeglądarki */
 * {
     margin: 0;
     padding: 0;
@@ -10,12 +11,14 @@
     font-family: 'looksky';
 }
 
+/* Podłączenie fontu wg jego instrukcji */
 @font-face {
 	font-family: 'looksky';
 	src: url('../fonts/looksky.eot');
 	src: local('looksky'), url('../fonts/looksky.woff') format('woff'), url('../fonts//looksky.ttf') format('truetype');
 }
 
+/* Ustawienia "wyświetlacza" */
 #display {
     width: 60vw;
     height: 60vh;
@@ -29,6 +32,7 @@
     overflow: hidden;
 }
 
+/* Ustawienia kontenera na cyfry */
 .digitbox {
     position: absolute;
     top: 50%;
@@ -41,15 +45,16 @@
     text-align: center;
 }
 
-.digitbox:not(#number_0) {
-    backface-visibility: hidden;
-    animation-name: flip;
+/* Ustawienia animacji cyfr */
+.digitbox:not(#end_text) {
+    animation-name: vanish;
     animation-iteration-count: 1;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
 }
 
+/* Ustawienia wyglądu cyfr */
 .digit {
     font-size: 40rem;
     line-height: 60vh;
@@ -58,7 +63,8 @@
     text-shadow: 0px 0px 20px limegreen;
 }
 
-@keyframes flip {
+/* Animacja cyfr */
+@keyframes vanish {
     from {
         opacity: 1;
     }
@@ -68,6 +74,7 @@
     }
 }
 
+/* Opóźnienia wyświetlania cyfr */
 #number_10 {
     animation-delay: 1s;
 }
@@ -108,6 +115,7 @@
     animation-delay: 10s;
 }
 
+/* Ustawienia wyglądu końcowego napisu */
 .txt {
     font-size: 15rem;
     line-height: 60vh;
@@ -121,6 +129,7 @@
     opacity: 0;
 }
 
+/* Animacja końcowego napisu */
 @keyframes typing {
     from {
         opacity: 0;
@@ -131,6 +140,7 @@
     }
 }
 
+/* Opóźnienia wyświetlania liter napisu końcowego */
 #ai {
     animation-delay: 11s;
 }
@@ -175,19 +185,15 @@
     animation-delay: 12.95s;
 }
 
-.txt_blink {
-    font-size: 15rem;
-    line-height: 60vh;
-    color: limegreen;
-    text-shadow: 0px 0px 20px limegreen;
+/* Ustawienia animacji ostatniej kropki */
+.txt + #dot3 {
     animation-name: blinking;
     animation-iteration-count: infinite;
     animation-duration: .6s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    opacity: 0;
 }
 
+/* Animacja ostatniej kropki */
 @keyframes blinking {
     from {
         opacity: 0;
