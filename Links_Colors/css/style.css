@@ -2,11 +2,31 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 1vh;
-    line-height: 1;
+    font-size: 3vh;
+    line-height: 1.2;
     vertical-align: baseline;
     text-decoration: none;
     outline: 0;
-    font-family: 'looksky';
+    font-family: sans-serif;
 }
 
+ul {
+    padding: 3vh;
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: darkblue;
+}
+
+a[href$=".doc"] {
+    color: crimson;
+}
+
+a[href$=".docx"] {
+    color: cornflowerblue;
+}
