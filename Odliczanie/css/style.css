@@ -26,23 +26,171 @@
     right: 0;
     margin: auto;
     position: absolute;
+    overflow: hidden;
 }
 
 .digitbox {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: red;
     left: 0;
     right: 0;
     text-align: center;
-}
-
-.digit {
-    font-size: 40rem; 
-    color: limegreen;
+    margin: auto;
+    background-color: black;
+    text-align: center;
 }
 
 .digitbox:not(#number_0) {
-    display: none;
+    backface-visibility: hidden;
+    animation-name: flip;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.digit {
+    font-size: 40rem;
+    line-height: 60vh;
+    color: limegreen;
+    padding-left: 4vw;
+}
+
+@keyframes flip {
+    from {
+        opacity: 1;
+    }
+    
+    to {
+        opacity: 0;
+    }
+}
+
+#number_10 {
+    animation-delay: 1s;
+}
+
+#number_9 {
+    animation-delay: 2s;
+}
+
+#number_8 {
+    animation-delay: 3s;
+}
+
+#number_7 {
+    animation-delay: 4s;
+}
+
+#number_6 {
+    animation-delay: 5s;
+}
+
+#number_5 {
+    animation-delay: 6s;
+}
+
+#number_4 {
+    animation-delay: 7s;
+}
+
+#number_3 {
+    animation-delay: 8s;
+}
+
+#number_2 {
+    animation-delay: 9s;
+}
+
+#number_1 {
+    animation-delay: 10s;
+}
+
+.txt {
+    font-size: 15rem;
+    line-height: 60vh;
+    color: limegreen;
+    animation-name: typing;
+    animation-iteration-count: 1;
+    animation-duration: .1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+
+@keyframes typing {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+#ai {
+    animation-delay: 11s;
+}
+
+#el {
+    animation-delay: 11.3s;
+}
+
+#ou {
+    animation-delay: 11.45s;
+}
+
+#vi {
+    animation-delay: 11.6s;
+}
+
+#ii {
+    animation-delay: 11.75s;
+}
+
+#si {
+    animation-delay: 12.15s;
+}
+
+#es {
+    animation-delay: 12.3s;
+}
+
+#ess {
+    animation-delay: 12.45s;
+}
+
+#dot1 {
+    animation-delay: 12.75s;
+}
+
+#dot2 {
+    animation-delay: 12.85s;
+}
+
+#dot3 {
+    animation-delay: 12.95s;
+}
+
+.txt_blink {
+    font-size: 15rem;
+    line-height: 60vh;
+    color: limegreen;
+    animation-name: blinking;
+    animation-iteration-count: infinite;
+    animation-duration: .6s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes blinking {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
 }
