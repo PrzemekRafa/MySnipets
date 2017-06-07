@@ -2,8 +2,47 @@
     margin: 0;
     padding: 0;
     border: 0;
-    line-height: 1.4em;
+    font-size: 1vh;
+    line-height: 1;
     vertical-align: baseline;
     text-decoration: none;
     outline: 0;
+    font-family: 'looksky';
+}
+
+@font-face {
+	font-family: 'looksky';
+	src: url('../fonts/looksky.eot');
+	src: local('looksky'), url('../fonts/looksky.woff') format('woff'), url('../fonts//looksky.ttf') format('truetype');
+}
+
+#display {
+    width: 60vw;
+    height: 60vh;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.digitbox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: red;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.digit {
+    font-size: 40rem; 
+    color: limegreen;
+}
+
+.digitbox:not(#number_0) {
+    display: none;
 }

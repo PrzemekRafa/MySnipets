@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'looksky';
+	src: url('./looksky.eot');
+	src: local('looksky'), url('./looksky.woff') format('woff'), url('./looksky.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_862">Text with this font applied</p> */
+.fontsforweb_fontid_862 {
+	font-family: 'looksky' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
