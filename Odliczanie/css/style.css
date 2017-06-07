@@ -20,8 +20,8 @@
 
 /* Ustawienia "wyświetlacza" */
 #display {
-    width: 60vw;
-    height: 60vh;
+    width: 70vw;
+    height: 65vh;
     background-color: black;
     top: 0;
     bottom: 0;
@@ -61,6 +61,7 @@
     color: limegreen;
     padding-left: 4vw;
     text-shadow: 0px 0px 20px limegreen;
+    letter-spacing: 1rem;
 }
 
 /* Animacja cyfr */
@@ -127,6 +128,7 @@
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     opacity: 0;
+    letter-spacing: 1rem;
 }
 
 /* Animacja końcowego napisu */
@@ -142,47 +144,47 @@
 
 /* Opóźnienia wyświetlania liter napisu końcowego */
 #ai {
-    animation-delay: 11s;
+    animation-delay: 10.5s;
 }
 
 #el {
-    animation-delay: 11.3s;
+    animation-delay: 10.8s;
 }
 
 #ou {
-    animation-delay: 11.45s;
+    animation-delay: 10.95s;
 }
 
 #vi {
-    animation-delay: 11.6s;
+    animation-delay: 11.1s
 }
 
 #ii {
-    animation-delay: 11.75s;
+    animation-delay: 11.25s;
 }
 
 #si {
-    animation-delay: 12.15s;
+    animation-delay: 11.65s;
 }
 
 #es {
-    animation-delay: 12.3s;
+    animation-delay: 11.8s;
 }
 
 #ess {
-    animation-delay: 12.45s;
+    animation-delay: 11.95s;
 }
 
 #dot1 {
-    animation-delay: 12.75s;
+    animation-delay: 12.25s;
 }
 
 #dot2 {
-    animation-delay: 12.85s;
+    animation-delay: 12.35s;
 }
 
 #dot3 {
-    animation-delay: 12.95s;
+    animation-delay: 12.45s;
 }
 
 /* Ustawienia animacji ostatniej kropki */
