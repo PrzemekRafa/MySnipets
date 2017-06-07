@@ -1,0 +1,52 @@
+/* Reset ustawień przeglądarki */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 2vh;
+    line-height: 1.2;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
+    font-family: sans-serif;
+}
+
+p {
+    padding: 3vh 3vh 0 3vh;
+    font-size: 1.25rem;
+}
+
+blockquote {
+    font-size: 1.25rem;
+    padding: 3vh 3vh 0 3vh;
+}
+
+q {
+    font-size: 1.25rem;
+}
+
+/* Nietypowe cudzysłowy */
+
+blockquote[lang="en"]::before,
+q[lang="en"]::before{
+    content: "*";
+    color: crimson;
+}
+
+blockquote[lang="en"]::after,
+q[lang="en"]::after {
+    content: "*";
+    color: crimson;
+}
+
+blockquote:not([lang="en"])::before,
+q:not([lang="en"])::before{
+    content: "**";
+    color: cornflowerblue;
+}
+
+blockquote:not([lang="en"])::after,
+q:not([lang="en"])::after {
+    content: "**";
+    color: cornflowerblue;
+}
