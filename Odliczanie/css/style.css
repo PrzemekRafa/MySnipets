@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 1vh;
+    font-size: 1vw;
     line-height: 1;
     vertical-align: baseline;
     text-decoration: none;
@@ -21,7 +21,7 @@
 /* Ustawienia "wyświetlacza" */
 #display {
     width: 70vw;
-    height: 65vh;
+    height: 35vw;
     background-color: black;
     top: 0;
     bottom: 0;
@@ -39,8 +39,6 @@
     transform: translateY(-50%);
     left: 0;
     right: 0;
-    text-align: center;
-    margin: auto;
     background-color: black;
     text-align: center;
 }
@@ -56,8 +54,7 @@
 
 /* Ustawienia wyglądu cyfr */
 .digit {
-    font-size: 40rem;
-    line-height: 60vh;
+    font-size: 20rem;
     color: limegreen;
     padding-left: 4vw;
     text-shadow: 0px 0px 20px limegreen;
@@ -118,8 +115,7 @@
 
 /* Ustawienia wyglądu końcowego napisu */
 .txt {
-    font-size: 15rem;
-    line-height: 60vh;
+    font-size: 6rem;
     color: limegreen;
     text-shadow: 0px 0px 20px limegreen;
     animation-name: typing;
