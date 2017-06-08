@@ -99,7 +99,7 @@ html, body {
 
 @keyframes ladowanie {
     0%, 100% {
-        opacity: 0;
+        opacity: 0.3;
     }
     
     50% {
