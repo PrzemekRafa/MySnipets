@@ -1,0 +1,56 @@
+/* Reset ustawień przeglądarki */
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1.6vw;
+    line-height: 1;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 70vw;
+    height: 30vw;
+    background-color: cornflowerblue;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 50vh;
+    transform: translateY(-50%);
+    margin: auto;
+}
+
+.text {
+    display: block;
+    color: white;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+
+.heart {
+    font-family: 'FontAwesome';
+    color: crimson;
+    animation-name: pulsowanie;
+    animation-duration: .75s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulsowanie {
+    0%, 100% {
+        transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.25);
+    }
+}
