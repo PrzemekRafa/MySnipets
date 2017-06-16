@@ -1,0 +1,51 @@
+/* Reset ustawień przeglądarki */
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1.6vw;
+    line-height: 1;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
+    font-family: sans-serif;
+}
+
+.main_container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.img_container {
+    width: 400px;
+    height: 200px;
+    background-image: url(../img/obraz.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.img_container:hover {
+    background-image: url();
+}
+
+.img_container::before,
+.img_container::after {
+    content: "";
+    display: block;
+    width: 410px;
+    height: 210px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    box-sizing: border-box;
+}
