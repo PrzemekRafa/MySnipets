@@ -1,0 +1,69 @@
+html, body, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1;
+    text-decoration: none;
+    outline: 0;
+    font-family: serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main_container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.animation_container {
+    width: 35vw;
+    height: 18vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#front {
+    background: linear-gradient(to right, rgba(170,0,40,.8) 0%,rgba(170,0,40,0) 20%,rgba(170,0,40,.8) 40%,rgba(170,0,40,0) 60%,rgba(170,0,40,.8) 80%,rgba(170,0,40,0) 100%);
+    background-size: 500%;
+    animation-name: przeplyw;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    z-index: 10;
+}
+
+#back {
+    background-color: rgba(170, 0, 40, 1);
+    z-index: 1;
+}
+
+.napis {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3vw;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.8vw;
+    line-height: 3vw;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: white;
+    z-index: 5;
+}
+
+@keyframes przeplyw {
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
