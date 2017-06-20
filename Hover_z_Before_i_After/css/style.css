@@ -1,14 +1,10 @@
 /* Reset ustawień przeglądarki */
-html, body {
+html, body, p {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 1.6vw;
-    line-height: 1;
-    vertical-align: baseline;
     text-decoration: none;
     outline: 0;
-    font-family: sans-serif;
 }
 
 .main_container {
@@ -17,8 +13,8 @@ html, body {
 }
 
 .img_container {
-    width: 400px;
-    height: 200px;
+    width: 40vw;
+    height: 20vw;
     background-image: url(../img/obraz.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -31,21 +27,73 @@ html, body {
     position: absolute;
 }
 
-.img_container:hover {
-    background-image: url();
-}
-
 .img_container::before,
 .img_container::after {
     content: "";
     display: block;
-    width: 410px;
-    height: 210px;
+    width: calc(40vw + 10px);
     position: absolute;
-    top: -5px;
     left: -5px;
+    border-width: 0px 0px 0px 0px;
     border-color: black;
-    border-width: 2px;
     border-style: solid;
     box-sizing: border-box;
+    transition: all .25s ease-out;
+}
+
+.img_container::before {
+    height: 0;
+    top: -5px;
+}
+
+.img_container::after {
+    height: 0;
+    bottom: -5px;
+}
+
+.img_container:hover::before {
+    border-width: 2px 2px 0px 2px;
+    height: calc(10vw + 5px);
+}
+
+
+.img_container:hover::after {
+    border-width: 0px 2px 2px 2px;
+    height: calc(10vw + 5px);
+}
+
+.napis {
+    display: none;
+    width: calc(40vw + 10px);
+    background-color: rgba(0,0,0,.75);
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    text-transform: uppercase;
+    left: -5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.img_container:hover > .napis {
+    animation-name: powiekszenie_belki;
+    animation-fill-mode: forwards;
+    animation-duration: .25s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    display: block;
+}
+
+@keyframes powiekszenie_belki {
+    from {  
+    height: 2vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+    }
+    to {
+    height: 5vw;
+    font-size: 4.8vw;
+    line-height: 5vw;
+    }
 }
