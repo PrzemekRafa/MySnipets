@@ -20,7 +20,8 @@ html, body, p {
     background-repeat: no-repeat;
     background-position: center;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     left: 0;
     right: 0;
     margin: auto;
@@ -37,7 +38,9 @@ html, body, p {
     border-width: 0px 0px 0px 0px;
     border-color: black;
     border-style: solid;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: all .25s ease-out;
     transition: all .25s ease-out;
 }
 
@@ -73,16 +76,35 @@ html, body, p {
     left: -5px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 .img_container:hover > .napis {
-    animation-name: powiekszenie_belki;
-    animation-fill-mode: forwards;
-    animation-duration: .25s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-out;
+    -webkit-animation-name: powiekszenie_belki;
+            animation-name: powiekszenie_belki;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: .25s;
+            animation-duration: .25s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
     display: block;
+}
+
+@-webkit-keyframes powiekszenie_belki {
+    from {  
+    height: 2vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+    }
+    to {
+    height: 5vw;
+    font-size: 4.8vw;
+    line-height: 5vw;
+    }
 }
 
 @keyframes powiekszenie_belki {
